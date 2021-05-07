@@ -1,0 +1,130 @@
+body{
+    font-family: 'Open Sans', sans-serif;  font-size: 1.4rem; color: #4a4b4d; line-height: 2.4rem;
+}
+html{
+    font-size: 62.5%;
+}
+p{
+    margin: 0; padding: 0; color: #4a4b4d;
+}
+
+h1, h2, h3, h3, h4, h5, h6{
+    margin: 0; padding: 0; line-height: .9; font-family: 'Nunito Sans', sans-serif;
+}
+ul, li{
+    margin: 0; padding: 0;list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.loader{ 
+    width: 100%; height: 100%; position: fixed; left: 0; top: 0; background-color: #fff; z-index: 9999; display: flex; align-items: center; justify-content: center;
+    .spinner-border{ /*border-color: #0b0c26;*/     border: .25em solid #0b0c26;     border-right-color: transparent;}
+}
+.clear {
+    clear: both;
+}
+
+.p_t{
+    padding-top: 4rem;
+}
+.p_b{
+    padding-bottom: 4rem;
+}
+
+.custom_button{
+    display: inline-block;
+    &.center{
+        text-align: center;
+    }
+    &.custom_button2{
+        a{
+            height: 4.2rem; line-height: 3.9rem; color: #1e306e; background-color: #d2edf8; float: none; display: inline-block; 
+        }
+    }
+    a{
+       height: 4.7rem; padding: 0 3rem; line-height: 4.3rem; background-color: transparent; border: #d2edf8 2px solid; font-weight: 700; display: block; font-size: 1.5rem; color: #d2edf8; text-decoration: none; outline-style: none; font-family: 'Nunito Sans', sans-serif;   text-transform: uppercase; text-align: center; transition: all .5s ease-in; border-radius: 8px;
+        &:hover{
+            background-color: #fff; border-color: #d2edf8; color: #4a4b4d;
+        }
+    }
+       
+}
+
+
+
+.custom_heading{
+    width: 100%; padding-top: 5.5rem; position: relative;
+    img{
+        position: absolute; top: 0; left: 0; margin: auto;
+    }
+    &.left{
+        text-align: left;
+    }
+    &.center{
+        text-align: center;
+       img{
+           right: 0;
+       }
+    }
+    h2{
+        font-size: 4rem; text-transform: uppercase;  font-weight: 700; padding: 0;  position: relative; display: inline-block; font-style: normal;
+        span{
+            color: #1e306e;
+        }
+    }
+    h4{
+        color: #8d8d8d; font-size: 1.5rem; text-transform: uppercase; margin-top: 3.8rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:1023px){
+    .custom_heading{
+        &.left{
+            img{
+                right: 0; margin: auto;
+            }
+            text-align: center;
+        }
+       
+    }
+}
+
+.default_body{
+    width: 100%; float: left; padding: 7rem 0;
+}
+
+@media only screen and (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media only screen and (max-width:1023px){
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 47.5%;
+    }
+    .heading{
+        p{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+    
+}

@@ -1,0 +1,118 @@
+.banner_details_back{
+    width: 100%; height: auto; position: relative;
+    .container{
+        position: relative;
+    }
+    .portion{
+        width: 100%; height: 75.8rem; position: relative; 
+        &:after{
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0; content: ""; background-color: rgba(0,0,0,.33); 
+        }
+        img{
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover;
+        }
+        .content_back{
+            position: relative; z-index: 1;
+            h2{
+                font-size: 6rem; color: #1e306e; font-weight: 900;text-transform: uppercase; display: inline-block; margin-bottom: 3rem;
+                mark{
+                    padding: 0; background-color: #d2edf8;  padding: 1rem 0 1rem 10px ; line-height: 10.6rem;  position: relative;
+                    &::before{
+                        width: 5rem; height: 100%; position: absolute; top: 0; right: -4.9rem; background-color: #d2edf8; content: ""; clip-path: polygon(0 0, 0 100%, 100% 0);
+                    }
+                    
+                }
+            }
+            h1{
+                font-size: 6rem; color: #1e306e; font-weight: 900;text-transform: uppercase; display: inline-block; margin-bottom: 3rem;
+            }
+            h3{
+                font-size: 6.9rem; color: #ffffff; font-weight: 700;  text-transform: uppercase; margin-bottom: 2rem;
+            }
+            p{
+                color: #fff; line-height: 2.8rem; font-size: 1.5rem; margin-bottom: 3rem;     padding-right: 7rem;
+            }
+        }
+    }
+    .owl-nav{
+        position: absolute; bottom: 0; right: 0; left: 0; margin: auto;  width: 100%; max-width: 1170px; padding: 0 15px;
+        button{
+            width: 40px; height: 42px; background-color: #fff !important; float: right; margin: 0; border-radius: 0; position: relative; z-index: 1;
+            span{
+                background-image: url(../images/rightt_arrow.png); width: 11px; height: 20px; float: left; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+            }
+            &:nth-child(2){
+                width: 60px;  
+                &::before{
+                    position: absolute; width: 100%; height: 100%; background-color: #1e306e; content: ""; left: 0; top: 0; clip-path: polygon(0 0, 100% 0, 77% 100%, 0 100%); z-index: -1;
+                }
+                span{
+                    background-image: url(../images/left_arrow.png);
+                }
+            }
+            
+            &:focus{
+               outline-style: none;
+            }
+            &.disabled{
+                opacity: 1;
+            }
+        }
+        
+    }
+    &.inner{
+        .portion{
+            height:35rem ;
+            text-align: center;
+            .content_back{
+                h1{
+                    color: #fff;
+                }
+                .bedcrumb{
+                    li{
+                        margin-right: 2rem; color: #fff; font-size: 1.5rem; text-transform: uppercase;
+                        &:last-child{
+                            margin: 0;
+                        }
+                        a{
+                            color: #fff; position: relative; padding-right: 2rem;
+                            &:after{
+                                position: absolute; top: 0; bottom: 0; right: 0; background-color: #fff; width: 2px; height: 15px; content: ""; margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .banner_details_back{
+        .portion{
+            .content_back{
+                width: 100%; text-align: center;
+                h2{
+                    font-size: 3rem; margin-bottom: 0;
+                    mark{
+                        padding: 1rem;
+                        &::before{
+                            clip-path: none; display: none;
+                        }
+                        
+                    }
+                }
+                h1{
+                    font-size: 3rem; margin-bottom: 0;
+                }
+                h3{
+                    font-size: 3.5rem;
+                }
+            }
+        }
+        .owl-nav{
+            max-width: 130px;
+        }
+    }
+    
+}
